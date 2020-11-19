@@ -53,13 +53,13 @@ out=response.text
 #sys.exit(out)
 clse=re.search('Please try closing and re-opening your browser window.', out)
 if clse!=None:
-    sys.exit('Please check if the dtsg value is correct.\n If you continuously get this error, uncoment line 54 and run the script again and send me the output at prabesh01@pm.me')
+    sys.exit('Please check if the dtsg value is correct.\n If you continuously get this error, uncoment line 53 and run the script again and send me the output at prabesh01@pm.me')
 exp=re.search('Please log in to continue.', out)
 if exp!=None:
-    sys.exit("Please check if cookies value is up-to-date.\n If you continuously get this error, uncoment line 54 and run the script again and send me the output at prabesh01@pm.me") 
+    sys.exit("Please check if cookies value is up-to-date.\n If you continuously get this error, uncoment line 53 and run the script again and send me the output at prabesh01@pm.me") 
 sth=re.search('mid', out)
 if sth==None:
-    sys.exit("Something went wrong, Please try again.\n If you continuously get this error, uncoment line 54 and run the script again and send me the output at prabesh01@pm.me")   
+    sys.exit("Something went wrong, Please try again.\n If you continuously get this error, uncoment line 53 and run the script again and send me the output at prabesh01@pm.me")   
      
 x=re.findall('mid\.\$.............................',out)
 x = list(dict.fromkeys(x))
