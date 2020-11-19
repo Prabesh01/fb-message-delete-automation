@@ -8,8 +8,10 @@ To set it up, you will need to provide 4 values to the script so that this scrip
 
 The value of user and xs can be found in cookies by name c_user and xs respectively.
 The dtsg value can be obtained by running this code in messenger.com's console:
+```
 var dtsg = require('DTSG').getToken();
   alert('Your fb_dtsg token: ' + dtsg);
+  ```
 
 Obtaining doc value is bit hard and this is why I call this script a beta version. But after you got once, it never changes so its worth it.
 To get doc_id value, simply intercept browser's req with burp and browse messenger.com. Then keep forwarding around 40-50 reqs until you get this kinda POST req  to /api/graphqlbatch/ with its data containing batch_name=MessengerGraphQLThreadFetcher:
