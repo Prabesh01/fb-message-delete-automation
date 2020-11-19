@@ -4,7 +4,7 @@ This script is still in beta version, not because its not working well but becau
 
 # Setup
 
-To set it up, you will need to provide 4 values to the script so that this script could perform actions on behalf of you. They are : c_user, xs, gb_dtsg and doc_id. These values doesn't change until your cookie renews. Here's how you could obtain them:
+To set it up, you will need to provide 4 values to the script so that this script could perform actions on behalf of you. They are : c_user, xs, fb_dtsg and doc_id. These values doesn't change until your cookie renews. Here's how you could obtain them:
 
 The value of user and xs can be found in cookies by name c_user and xs respectively.
 The dtsg value can be obtained by running this code in messenger.com's console:
