@@ -22,6 +22,24 @@ To get doc_id value, simply intercept browser's req with burp and browse messeng
 <a href="https://github.com/TheBinitGhimire">@TheBinitGhimire</a>,<a href="https://www.facebook.com/nepolian.pratik">@nepolian.pratik</a>, <a href="https://github.com/santoshbrl5/">@santoshbrl5</a>, <a href="https://github.com/roopeshach">@roopeshach</a><br>
 Thank you guys for helping me out =)
 
+# Alternative
+
+Alternatively, you can simply paste this script in messenger.com's console:
+```
+function ok(){
+threedots = document.querySelectorAll("._8sop");
+threedotslast = threedots[threedots.length - 1];
+threedotslast.click();
+removebutton = document.querySelector("._hw5");
+removebutton.click();
+unsendbutton = document.querySelectorAll("._3quh")[1];
+unsendbutton.click();
+setTimeout( ok, 1000 );
+}
+ok(1);
+```
+Ofcourse, it is limited and has many issues.
+
 # License
 
 [![CC0](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
