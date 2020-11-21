@@ -13,7 +13,7 @@ var dtsg = require('DTSG').getToken();
   alert('Your fb_dtsg token: ' + dtsg);
   ```
 
-To get doc_id value, simply open developer console's network tab in messenger.com and filter out /api/graphqlbatch/. You will probably get 3 results. The required doc_id can be find in the request contaiing data: batch_name="MessengerGraphQLThreadFetcher" like this:
+To get doc_id value, simply open developer console's network tab in messenger.com and filter out /api/graphqlbatch/. You will probably get 3 results. The required doc_id can be found in the request containing data: batch_name="MessengerGraphQLThreadFetcher" like this:
 <br>
 
 <img alt="request sample" src="docid.png" />
