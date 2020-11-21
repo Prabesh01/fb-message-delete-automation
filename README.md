@@ -13,11 +13,10 @@ var dtsg = require('DTSG').getToken();
   alert('Your fb_dtsg token: ' + dtsg);
   ```
 
-Obtaining doc value is bit hard and this is why I call this script a beta version. But after you got once, it never changes so its worth it.
-To get doc_id value, simply intercept browser's req with burp and browse messenger.com. Then keep forwarding around 40-50 reqs until you get this kinda POST req  to /api/graphqlbatch/ with its data containing batch_name=MessengerGraphQLThreadFetcher:
+To get doc_id value, simply open developer console's network tab in messenger.com and filter out /api/graphqlbatch/. You will probably get 3 results. The required doc_id can be find in the request contaiing data: batch_name="MessengerGraphQLThreadFetcher" like this:
 <br>
 
-[<img alt="request sample" src="https://i.ibb.co/HPmy2Dm/125442802-755953381945538-3373863721969857427-n.png" />][sample]
+<img alt="request sample" src="docid.png" />
 
 <a href="https://github.com/TheBinitGhimire">@TheBinitGhimire</a>,<a href="https://www.facebook.com/nepolian.pratik">@nepolian.pratik</a>, <a href="https://github.com/santoshbrl5/">@santoshbrl5</a>, <a href="https://github.com/roopeshach">@roopeshach</a><br>
 Thank you guys for helping me out =)
@@ -43,5 +42,3 @@ Ofcourse, it is limited and has many issues.
 # License
 
 [![CC0](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
-
-[sample]: https://ibb.co/GMgDJvg
