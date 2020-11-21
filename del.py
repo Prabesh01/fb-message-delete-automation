@@ -28,7 +28,6 @@ else:
     target=re.findall("entity_id\":\"................",target)
     target=str(target)
     target=re.sub(r'\D','',target)
-print('\n\n\n')
 
 cookies = {
     'c_user': user,
