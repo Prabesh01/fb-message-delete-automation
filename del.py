@@ -25,7 +25,7 @@ else:
     poss=re.search("entity_id", target)
     if poss==None:
         sys.exit('Couldn\'t fetch profile id from username.\n Check if the provided target usename is correct and try again')
-    target=re.findall("entity_id\":\"...............",target)
+    target=re.findall("entity_id\":\"................",target)
     target=str(target)
     target=re.sub(r'\D','',target)
 print('\n\n\n')
