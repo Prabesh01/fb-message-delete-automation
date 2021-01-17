@@ -1,3 +1,6 @@
+# Doesn't work anymore from Jan 10 2021
+_will try to update the script to make it work with new messsenger updates_
+
 This script is still in beta version, not because its not working well but because its hard to setup for the first time. But once you set it up, you are ready to go. I will improve this script to set it up by itself in future.
 
 <img alt="Demo" src="demo.png" />
